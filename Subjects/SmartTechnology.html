@@ -274,6 +274,25 @@
   <div class="content">
     <div class="segment">
       <div class="proof">
+        <img src="../Content/pwscode.png" alt="PCB design">
+      </div>
+      <div class="explanation">
+        <p>
+          Om het plant water systeem werkend te maken moest er ook software geschreven worden. Dit was voor mij niet een
+          heel
+          grote uitdaging gezien ik dit meerdere keren voor mijn studie en voor hobby heb gedaan. Verder was het ook
+          niet een
+          ingewikkeld systeem.
+          <br> De code die ik heb gemaakt voor dit project is te downloaden door op de knop hieronder te drukken.
+          <button class="button" onclick="openPDF('../Content/watergiver.zip')">
+            Download PCB plant water systeem bestanden
+          </button>
+        </p>
+        <div class="date">24 sept 2021</div>
+      </div>
+    </div>
+    <div class="segment">
+      <div class="proof">
         <img src="../Content/FirstPCB.png" alt="PCB design">
       </div>
       <div class="explanation">
@@ -291,13 +310,57 @@
     </div>
     <div class="segment">
       <div class="proof">
-        <img src="../Content/templateImage.jpg" alt="DHT sensor">
+        <img src="../Content/PWSEind.png" alt="PCB PWS">
       </div>
       <div class="explanation">
         <p>
-          TODO
+          In de afbeelding hiernaast is te mijn uiteindelijke ontwerp te zien voor het plant water systeem. Deze is
+          gemaakt met Eagle en bevat alle onderdelen om al mijn hardware aan te sturen. <br>
+          In dit ontwerp zijn alle componenten te zien die benodigd waren bij het plant water systeem. Zo is linksboven
+          plek gemaakt voor het relais en rechtboven plek voor de ESP32. Deze ESP is verbonden aan de andere
+          componenten, wat te zien is aan de rode lijnen in de afbeelding.
+          <button class="button" onclick="openPDF('../Content/smartplant.zip')">
+            Download PCB plant water systeem bestanden
+          </button>
         </p>
-        <div class="date">3 sept 2021</div>
+        <div class="date">13 okt 2021</div>
+      </div>
+    </div>
+    <div class="segment">
+      <div class="proof">
+        <img src="../Content/soldeer.jpg" alt="gesoldeerd pcb">
+      </div>
+      <div class="explanation">
+        <p>
+          Nadat ik mijn PCB had ontvangen was het mijn taak om de componenten op het PCB te solderen. Ik had al meer
+          ervaring met solderen dus ik besloot dit thuis te doen. In de afbeelding hiernaast is mijn eindresultaat te
+          zien. Hier
+          is ook te zien dat ik nog niet de moist sensor en de LDR heb gesoldeerd op het PCB. Dit heb ik nog niet gedaan
+          omdat
+          het mijn plan is om deze sensoren in een extern kastje te plaatsen.
+        </p>
+        <div class="date">16 dec 2021</div>
+      </div>
+    </div>
+    <div class="segment">
+      <div class="proof">
+        <img src="../Content/SolidworksDesingPWS.png" alt="solidworks">
+      </div>
+      <div class="explanation">
+        <p>
+          Het laatste ontwerp gedeelte van het plant water systeem was het maken van een bakje waar het PCB in
+          gemonteerd kon worden. Hier moesten we SolidWorks voor gebruiken. <br> Mijn idee was om bakje te maken voor de
+          ESP en paar andere onderdelen en een klein bakje te maken voor de LDR en de moist sensor. Deze zijn beide te
+          zien in de afbeelding hiernaast. <br>
+          Het (hoofd) bakje bestaat uit twee compartimenten, waarvan de onderste de PCB bevat en het bovenste
+          compartiment de batterijhouder. De PCB kan van de voorkant in het bakje geschoven worden en met twee schroeven
+          aan de rechterkant vast worden gezet. De batterijhouder wordt vastgehouden met de zijkanten van het bakje,
+          deze zijn zo gemaakt dat alle precies zou moeten passen.
+          <button class="button" onclick="openPDF('../Content/3dDesignPCB.SLDPRT')">
+            Download PCB plant water systeem bestanden
+          </button>
+        </p>
+        <div class="date">16 dec 2021</div>
       </div>
     </div>
   </div>
@@ -451,7 +514,10 @@
 
   }
 
-
+  function openPDF(pdf) {
+    window.open(pdf);
+    return false;
+  }
 
 </script>
 
