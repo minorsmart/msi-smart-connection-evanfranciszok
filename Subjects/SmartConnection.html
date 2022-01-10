@@ -165,25 +165,6 @@
       hoe HTML en CSS werkt, omdat ze dit tijdens de les niet genoeg begrepen.
     </p>
   </div>
-  <div class="button collapsible">
-    Bewijsmateriaal
-    <div class="indicator"></div>
-  </div>
-  <div class="content">
-    <div class="segment">
-      <div class="proof">
-        <img src="../Content/templateImage.jpg" alt="template">
-      </div>
-      <div class="explanation">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolores obcaecati dignissimos doloremque,
-          assumenda numquam dolor officiis inventore maxime neque aperiam, vitae odi.
-
-        </p>
-        <div class="date">2 sept 2021</div>
-      </div>
-    </div>
-  </div>
 
   <div class="chapter">
     <h1>Week 5</h1>
@@ -285,7 +266,18 @@
     });
   }
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
+
+  $(document).ready(function () {
+    fetch("https://api.ipify.org/?format=json").then(response => response.json()).then(data => {
+      setTimeout(() => {
+        fetch("https://ipinfo.io/" + data.ip + "/geo").then(georesponse => georesponse.json()).then(geodata => {
+          console.log(geodata);
+        });
+      }, 500);
+    });
+  });
 
   var auth_token = 'OZOaWrbsd_V93DRTonRaSjhmlJeC9Ge0';
   setInterval(function () {
