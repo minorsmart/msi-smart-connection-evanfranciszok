@@ -113,9 +113,12 @@
       </div>
       <div class="explanation">
         <p>
-          Onderzoeksvraag beoordelen
+          Tijdens de review sessie had ik redelijk positieve resultaten terug gekregen van mijn medestudenten. Hierbij
+          was het minst positieve gedeelte de scope van mijn onderzoek. Alleen wist ik al wel hoeveel technologieën er
+          zijn en welke ik ging onderzoeken dus deze was kleiner dan de onderzoeksvraag deed lijken. <br> In de
+          afbeelding hier recht zijn de resultaten te zien van deze feedback sessie.
         </p>
-        <div class="date">1 sept 2021</div>
+        <div class="date">5 okt 2021</div>
       </div>
     </div>
   </div>
@@ -138,13 +141,18 @@
   <div class="content">
     <div class="segment">
       <div class="proof">
-        <img src="../Content/templateImage.jpg" alt="">
+        <img src="../Content/presentationSlide.png" alt="">
       </div>
       <div class="explanation">
         <p>
-          TODO
+          Het laatste onderdeel van Smart Start was het uitwerken van het onderzoek. Hierbij was het nog niet nodig om
+          het allemaal uit te werken en ik had dan ook alleen deelvraag 1 uitgewerkt en deze gepresenteerd aan mijn
+          medestudenten voor feedback.
+          <button class="button" onclick="openPDF('../Content/technologienPresentation.pdf')">
+            Open presentatie van de pitch
+          </button>
         </p>
-        <div class="date">1 sept 2021</div>
+        <div class="date">8 okt 2021</div>
       </div>
     </div>
   </div>
@@ -168,6 +176,11 @@
         content.style.maxHeight = content.scrollHeight + "px";
       }
     });
+  }
+
+  function openPDF(pdf) {
+    window.open(pdf);
+    return false;
   }
 </script>
 
