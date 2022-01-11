@@ -376,3 +376,10 @@ pre {
   color: white;
   text-decoration:underline;
 }
+
+.learninggoal {
+  color: rgb(195, 196, 226);
+  padding-bottom: 10px;
+  border-bottom: 3px solid rgb(195, 196, 226);
+  border-image: linear-gradient(90deg, rgb(195, 196, 226), rgba(255,255,255,0)) 1;
+}
