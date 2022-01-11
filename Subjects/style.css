@@ -365,3 +365,14 @@ pre {
 .noaStyle {
   background-color: red;
 }
+
+.linkToSubject {
+  font-weight: bold;
+  transition: 0.2s;
+  color: rgb(195, 196, 226);
+}
+
+.linkToSubject:hover {
+  color: white;
+  text-decoration:underline;
+}
