@@ -382,4 +382,11 @@ pre {
   padding-bottom: 10px;
   border-bottom: 3px solid rgb(195, 196, 226);
   border-image: linear-gradient(90deg, rgb(195, 196, 226), rgba(255,255,255,0)) 1;
+  font-size: 1.5em !important;
+}
+
+.learninggoal + p {
+  width: auto;
+flex-grow: 100;
+font-size: 1.2em;
 }
