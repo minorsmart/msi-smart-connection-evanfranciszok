@@ -1,25 +1,12 @@
-# Notes for website
-## Has to be supported
-- videos
-- photos
-- text
-- code
+# Portfolio Evan Franciszok
 
-## Design
-### main page
+om de website te zien ga naar: https://minorsmart.github.io/msi-smart-connection-evanfranciszok/
 
-- photo with title
-- subject
-- video
-- author
-- intro text
+| Auteur         | Evan Franciszok              |
+| -------------- | ---------------------------- |
+| Student nummer | 618508                       |
+| Email          | EW.Franciszok@student.han.nl |
+| Studie         | Minor Smart Industry (HAN)   |
+| Jaar           | 2021-2022                    |
+| Locatie        | Wijchen                      |
 
-### subject page
-- 
-
-### other
-
-- For each subject a tab.
-- Page for a subject is devided in weeks.
-- between weeks a line separates the weeks.
-- Alternating sides with content align each week
