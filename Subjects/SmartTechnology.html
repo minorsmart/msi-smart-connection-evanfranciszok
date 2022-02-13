@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Technology Portofolio</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <nav role='navigation'>
+    <div id="menuToggle">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu">
+        <a href="../index.html">
+          <div class="button">
+            <h1>Home</h1>
+          </div>
+        </a>
+        <a href="SmartStart.html">
+          <div class="button">
+            <h1>Smart Start</h1>
+          </div>
+        </a>
+        <a href="SmartBusiness.html">
+          <div class="button">
+            <h1>Smart Business</h1>
+          </div>
+        </a>
+        <a href="SmartConnection.html">
+          <div class="button">
+            <h1>Smart Connection</h1>
+          </div>
+        </a>
+        <a href="SmartProject.html">
+          <div class="button">
+            <h1>Smart Project</h1>
+          </div>
+        </a>
+        <a href="Competenties.html">
+          <div class="button">
+            <h1>Competenties</h1>
+          </div>
+        </a>
+      </ul>
+    </div>
+  </nav>
+  <div class="header">
+    <div class="subject-title"
+      style="background-image: linear-gradient(to bottom,  #17181a67 0%, #17181a 100%), url('../Content/technologyBG.jpg');">
+      <h1>Smart Technology</h1>
+    </div>
+  </div>
+
+  <div class="chapter">
+    <h1>Introductie lessen</h1>
+    <p>
+      De eerste weken van Smart Industry stond in het teken van kennismaking met IoT. Hierbij hadden we een ESP32
+      gekregen en een tutorial om deze te besturen op RobotExchange.io. Aangezien ik op mijn opleiding al had gewerkt
+      met soortgelijke componenten was dit niet al te ingewikkeld. Ondanks dat was het wel belangrijk om al de
+      componenten en de ESP32 te testen om te verzekeren dat ze allemaal functioneren.
+    </p>
+  </div>
+  <div class="button collapsible">
+    Bewijsmateriaal
+    <div class="indicator"></div>
+  </div>
+  <div class="content">
+    <div class="segment">
+      <div class="proof">
+        <video width="100%" controls muted>
+          <source src="../Content/LDRSimple.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="explanation">
+        <p>
+          De eerste opdracht was de LDR (Light Dependent Resistor) werkend te krijgen. Hierbij moest de waarde van de
+          LDR uitgelezen worden door de ESP32 en doorgestuurd worden naar mijn computer. In het filmpje is te zien hoe
+          de waarde van de LDR op mijn scherm getoond word.
+          Deze test was op zichzelf best simpel zeker omdat ik zelf al vaak genoeg heb gewerkt met een LDR. Echter was
+          de ESP32 wel niet voor mij en deze beviel me wel. Er zitten veel pinnen op en heeft een 10 keer zo snelle
+          clockspeed als een soort gelijke Arduino (Arduino Zero) terwijl hij minder stroom verbruikt. Verder heeft de
+          ESP32 ingebouwde WIFI en Bluetooth ondersteuning.
+
+        </p>
+        <div class="date">2 sept 2021</div>
+      </div>
+    </div>
+    <div class="segment">
+      <div class="proof">
+        <video width="100%" controls muted>
+          <source src="../Content/LDRWithLed.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="explanation">
+        <p>
+          Voor de tweede test moest alleen de code aangepast worden. Hiermee zou de build-in led aangaan als je je
+          vinger over de LDR sensor houd. Als het programma start wordt er een referentie waarde bijgehouden van de LDR.
+          Als je je vinger boven de sensor houd zakt de waarde in. Als dit met meer dan 200 gebeurt ten opzichte van de
+          referentiewaarde, gaat het build-in ledje aan.
+        </p>
+        <div class="date">2 sept 2021</div>
+      </div>
+    </div>
+    <div class="segment">
+      <div class="proof">
+        <video width="100%" controls muted>
+          <source src="../Content/SoilSensor.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="explanation">
+        <p>
+          Deze opdracht hoorde eigenlijk bij de tweede week. Maar omdat ik alle opdrachten van de eerste week al af had
+          was ik doorgegaan met die opdrachten. Bij de eerste opdracht van week 2 was het de bedoeling dat we de waarde
+          van een Moisture Sensor uit gingen lezen en deze toonde op de computer. Dit werkte zo goed als hetzelfde als
+          de LDR, maar dan had je geen weerstand nodig.
+        </p>
+        <div class="date">2 sept 2021</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chapter">
+    <h1>Verdiepende lessen</h1>
+    <p>
+      Na het controleren van de werking van alle componenten zijn we iets dieper ingegaan op de software. Hierbij hebben
+      we onder andere gebruik gemaakt van de Blynk API en geleerd hoe functies werken. Aangezien ik deze dingen al
+      beheers door mijn studie heb ik in deze periode veel van de mede studenten geholpen met het maken van software en
+      het uitleggen hoe het allemaal werkt.
+    </p>
+  </div>
+  <div class="button collapsible">
+    Bewijsmateriaal
+    <div class="indicator"></div>
+  </div>
+  <div class="content">
+    <div class="segment">
+      <div class="proof">
+        <img src="../Content/DHT.jpg" alt="DHT sensor">
+      </div>
+      <div class="explanation">
+        <p>
+          De dag na de eerste les ben ik thuis doorgegaan om de rest van de sensoren werkend te krijgen voor les 2. De
+          eerste waarmee ik was begonnen was de DHT sensor. Deze sensor kan de luchtvochtigheid en de temperatuur meten.
+          Deze sensor geeft echter geen analoog signaal waardoor. Deze sensor geeft een digitale signaal, waardoor er
+          een library nodig was om de data te kunnen lezen van de sensor. Het gebruik van deze library is vanzelf
+          sprekend. In de foto is te zien hoe de luchtvochtigheid en de temperatuur te zien zijn op mijn scherm.
+        </p>
+        <div class="date">3 sept 2021</div>
+      </div>
+    </div>
+    <div class="segment">
+      <div class="proof">
+        <video width="100%" controls muted>
+          <source src="../Content/Pump.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="explanation">
+        <p>
+          Om de pomp werkend te krijgen was aardig wat stroom nodig. Meer dan de ESP32 kan leveren. Om deze reden is er
+          een relais nodig. Deze functioneert soortgelijk als een schakelaar alleen dan digitaal aanstuurbaar door in
+          dit geval de ESP32. Het aansturen van dit relay werkte in eerste instantie niet omdat ik het relais probeerde
+          aan te sturen met 3.3 Volt. Echter werkt het relais op 5 Volt. Verder is de aansturing van het relais heel
+          simpel, een hoog signaal zorgt ervoor dat het relais aanstaat. Hierdoor zal de digitale schakelaar omgezet
+          worden. Als het signaal laag is wordt de schakelaar weer uit gezet en zal de pomp stoppen met pompen. In het
+          filmpje is te zien dat de pomp aan gaat terwijl op het scherm wordt getoont dat deze aangezet word en vice
+          versa.
+        </p>
+        <div class="date">3 sept 2021</div>
+      </div>
+    </div>
+    <div class="segment">
+      <div class="proof">
+        <video width="100%" controls muted>
+          <source src="../Content/RFTransmitter.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="explanation">
+        <p>
+          De laatste sensor is de RF Transmitter. Dit is eigenlijk geen sensor omdat het niets meet. Het kan een RF
+          signaal sturen. Met dit signaal kan je onder andere KlikAanKlikUit apparaten aansturen. Wij hebben een
+          stekkerschakelaar gekregen die we kunnen aansturen met de RF Transmitter. Om een stekker schakelaar aan te
+          sturen moet je eerst de stekker schakelaar programmeren met een bepaalde code. Deze code kan gebruikt worden
+          om de stekker schakelaar aan te spreken. Dit heb ik gedaan met behulp van een library die (geloof ik) gemaakt
+          is door de docent.
+          </br>
+          In het filmpje is te zien hoe ik met de RF Transmitter de KlikAanKlikUit stekker schakelaar (niet zichtbaar in
+          het filmpje) aanstuur en hiermee mijn ledstrip op mijn bureau aanzet. Ik heb meerdere stekker schakelaars van
+          KlikAanKlikUit in mijn kamer. Alleen de stekker schakelaar onder mijn bureau ging aan. Dit kwam door de code
+          die ik in die stekker schakelaar had geprogrammeerd.
+        </p>
+        <div class="date">3 sept 2021</div>
+      </div>
+    </div>
+    <div class="segment">
+      <div class="proof">
+        <div class="gauges">
+          <div id="Humidity">
+            <div class="gauge">
+              <div>
+                <h1>--%</h1>
+              </div>
+            </div>
+            <p>luchtvochtigheid</p>
+          </div>
+          <div id="Temp">
+            <div class="gauge">
+              <div>
+                <h1>--°</h1>
+              </div>
+            </div>
+            <p>Temperatuur</p>
+          </div>
+          <div id="Moist">
+            <div class="gauge">
+              <div>
+                <h1>--%</h1>
+              </div>
+            </div>
+            <p>Bodemvocht</p>
+          </div>
+        </div>
+      </div>
+      <div class="explanation">
+        <p>
+          Deze meters geven meerdere verschillende waarden van de ESP32 weer. Om hier live waarde te zien moet de ESP32
+          aan staan en verbinding hebben met het zelfde netwerk als de computer waarop de website staat.
+          de luchtvochtigheid weer in percentage
+        </p>
+        <div class="date">21 sept 2021</div>
+      </div>
+    </div>
+    <div class="segment">
+      <div class="proof">
+        <video width="100%" controls muted>
+          <source src="../Content/APIConnection.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="explanation">
+        <p>
+          In de video hiernaast is de Blynk API in werking te zien (zie bewijsstuk hierboven).
+        </p>
+        <div class="date">21 sept 2021</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- plant water systeem -->
+  <div class="chapter">
+    <h1>Plant water systeem</h1>
+    <p>
+      De eindopdracht van Smart Technologie is maken van een plant water systeem. Hierbij hebben we moeten leren hoe we
+      een microcontroller kunnen programmeren, een PCB kunnen ontwerpen, solderen en hoe we 3D modellen kunnen ontwerpen
+      en uitprinten. <br>
+      Dit plant water systeem heeft een sensor om de grond vochtigheid en de lichtintensiteit te meten. Verder kan het
+      systeem een waterpomp aansturen een een RFID zender waarmee een klikaanklikuit stopcontact schakelaar aan het uit
+      gezet kan worden. Met deze schakelaar kan dan het licht aangezet worden als het donker is en met de waterpomp kan
+      water gegeven worden aan de lamp als de grondvochtigheid te laag is. <br> De componenten zitten allemaal in een
+      zelf ontworpen 3D geprinte behuizing met een zelfontworpen PCB.
+    </p>
+  </div>
+  <div class="button collapsible">
+    Bewijsmateriaal
+    <div class="indicator"></div>
+  </div>
+  <div class="content">
+    <div class="segment">
+      <div class="proof">
+        <img src="../Content/pwscode.png" alt="PCB design">
+      </div>
+      <div class="explanation">
+        <p>
+          Om het plant water systeem werkend te maken moest er ook software geschreven worden. Dit was voor mij niet een
+          heel
+          grote uitdaging gezien ik dit meerdere keren voor mijn studie en voor hobby heb gedaan. Verder was het ook
+          niet een
+          ingewikkeld systeem.
+          <br> De code die ik heb gemaakt voor dit project is te downloaden door op de knop hieronder te drukken.
+          <button class="button" onclick="openPDF('../Content/watergiver.zip')">
+            Download PCB plant water systeem bestanden
+          </button>
+        </p>
+        <div class="date">24 sept 2021</div>
+      </div>
+    </div>
+    <div class="segment">
+      <div class="proof">
+        <img src="../Content/FirstPCB.png" alt="PCB design">
+      </div>
+      <div class="explanation">
+        <p>
+          Om voor de eindopdracht een PCB te ontwerpen moesten we eerst oefenen hoe we eerst leren te werken met
+          software waarmee een PCB ontworpen kon worden. Hiervoor hebben we gebruik gemaakt van Eagle. In de afbeelding
+          hiernaast is een van de proefjes te zien. <br> Voor deze lessen wist ik wel wat een PCB was en hoe ik
+          componenten moest vervangen van een PCB maar ik had er nog nooit een zelf gemaakt. Tijdens dit leerprocess heb
+          ik de stappen geleerd die bij het ontwerpproces komen kijken waar ik nog over na had gedacht. Echter was het
+          niet heel ingewikkeld met uitzondering van het ontwerpprogramma. Deze vond ik niet heel gebruiksvriendelijk en
+          ook niet heel intuïtief.
+        </p>
+        <div class="date">30 sept 2021</div>
+      </div>
+    </div>
+    <div class="segment">
+      <div class="proof">
+        <img src="../Content/PWSEind.png" alt="PCB PWS">
+      </div>
+      <div class="explanation">
+        <p>
+          In de afbeelding hiernaast is te mijn uiteindelijke ontwerp te zien voor het plant water systeem. Deze is
+          gemaakt met Eagle en bevat alle onderdelen om al mijn hardware aan te sturen. <br>
+          In dit ontwerp zijn alle componenten te zien die benodigd waren bij het plant water systeem. Zo is linksboven
+          plek gemaakt voor het relais en rechtboven plek voor de ESP32. Deze ESP is verbonden aan de andere
+          componenten, wat te zien is aan de rode lijnen in de afbeelding.
+          <button class="button" onclick="openPDF('../Content/smartplant.zip')">
+            Download PCB plant water systeem bestanden
+          </button>
+        </p>
+        <div class="date">13 okt 2021</div>
+      </div>
+    </div>
+    <div class="segment">
+      <div class="proof">
+        <img src="../Content/soldeer.jpg" alt="gesoldeerd pcb">
+      </div>
+      <div class="explanation">
+        <p>
+          Nadat ik mijn PCB had ontvangen was het mijn taak om de componenten op het PCB te solderen. Ik had al meer
+          ervaring met solderen dus ik besloot dit thuis te doen. In de afbeelding hiernaast is mijn eindresultaat te
+          zien. Hier
+          is ook te zien dat ik nog niet de moist sensor en de LDR heb gesoldeerd op het PCB. Dit heb ik nog niet gedaan
+          omdat
+          het mijn plan is om deze sensoren in een extern kastje te plaatsen.
+        </p>
+        <div class="date">16 dec 2021</div>
+      </div>
+    </div>
+    <div class="segment">
+      <div class="proof">
+        <img src="../Content/SolidworksDesingPWS.png" alt="solidworks">
+      </div>
+      <div class="explanation">
+        <p>
+          Het laatste ontwerp gedeelte van het plant water systeem was het maken van een bakje waar het PCB in
+          gemonteerd kon worden. Hier moesten we SolidWorks voor gebruiken. <br> Mijn idee was om bakje te maken voor de
+          ESP en paar andere onderdelen en een klein bakje te maken voor de LDR en de moist sensor. Deze zijn beide te
+          zien in de afbeelding hiernaast. <br>
+          Het (hoofd) bakje bestaat uit twee compartimenten, waarvan de onderste de PCB bevat en het bovenste
+          compartiment de batterijhouder. De PCB kan van de voorkant in het bakje geschoven worden en met twee schroeven
+          aan de rechterkant vast worden gezet. De batterijhouder wordt vastgehouden met de zijkanten van het bakje,
+          deze zijn zo gemaakt dat alle precies zou moeten passen.
+          <button class="button" onclick="openPDF('../Content/3dDesignPCB.SLDPRT')">
+            Download PCB plant water systeem bestanden
+          </button>
+        </p>
+        <div class="date">16 dec 2021</div>
+      </div>
+    </div>
+    <div class="segment">
+      <div class="proof">
+        <video width="100%" controls muted>
+          <source src="../Content/pwsvideo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="explanation">
+        <p>
+          In de video hiernaast is te zien hoe alles samen werkt. Voor demonstratie doeleinden heb ik alles uit het 3d
+          geprinte doosje gehaald. Aan de linkerkant van de video is te zien wanneer de kaku schakelaar aan en uit gaat,
+          ook is het te horen. Door de moist sensor aan te raken met mijn vingers kan ik vochtigheid in de aarde
+          simuleren. Op het moment dat ik deze aanraak gaat de pomp uit en als ik deze los heb meet de ESP32 dat de
+          aarde te droog is en gaat de pomp aan. Dit is niet goed te zien in de video maar wel goed te horen.<br>
+          Ik heb er voor gekozen om de ESP32 door de batterijen te laten voeden. Hierdoor heeft de ESP32 maar 4.5 Volt
+          ipv 5 Volt maar hier kan de ESP32 ook mee werken.
+          <button class="button" onclick="openPDF('../Content/watergiver.zip')">
+            Download de plant water systeem code
+          </button>
+        </p>
+        <div class="date">24 dec 2021</div>
+      </div>
+    </div>
+    <div class="segment">
+      <div class="proof">
+        <img src="../Content/pwseindfoto.jpg" alt="PWS eind foto">
+      </div>
+      <div class="explanation">
+        <p>
+          In de afbeelding hiernaast is te mijn eindproduct te zien zonder deksel zodat ook de binnenkant te zien. Ik
+          ben erg tevreden met alles. Alles past precies in het bakje en het bakje ziet er naar mijn mening ook nog mooi
+          en simpel uit. Verder werkt het op zich zelf doordat het door de batterijen gevoed kan worden.
+        </p>
+        <div class="date">24 dec 2021</div>
+      </div>
+    </div>
+    <div class="segment">
+      <div class="proof">
+        <img src="../Content/pwseindmetdeksel.jpg" alt="PWS eind foto met deksel">
+      </div>
+      <div class="explanation">
+        <p>
+          In de afbeelding is ook te zien hoe het bakje er uit ziet met deksel. Hier is ook te zien dat de schakelaar
+          bereikbaar is door de deksel.
+        </p>
+        <div class="date">24 dec 2021</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COBOT Delft -->
+  <div class="chapter">
+    <h1>Cobot course Delft</h1>
+    <p>
+      Voor een optionele opdracht was het mogelijk om naar de Haagse hogeschool te gaan in Delft om te gaan werken met
+      een robot robot. Hierbij hebben we geleerd wat de toepassingen en uitdagingen zijn van de implementatie van een
+      robot in een fabriek. Ook hebben we zelf mogen werken met een robot.
+    </p>
+  </div>
+  <div class="button collapsible">
+    Bewijsmateriaal
+    <div class="indicator"></div>
+  </div>
+  <div class="content">
+    <div class="segment">
+      <div class="proof">
+        <video width="100%" controls muted>
+          <source src="../Content/cobotVid.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="explanation">
+        <p>
+          Tijdens de uitstap naar Delft hebben we een Cobot robot mogen programmeren. De opdracht was om een robot een
+          zo hoog mogelijke toren te laten maken met blokjes. Dit hebben we gedaan in wedstrijd vorm door de 4 aanwezige
+          studenten in twee groepjes van twee te splitsen. Hierbij zat ik samen in een team met Giel. <br>
+          Het is ons gelukt om een stapel te maken van 9 blokken, hiermee hadden we het wedstrijdje ook gewonnen. En
+          omdat we extra tijd hadden had ik ook nog gemaakt dat de robot de blokjes weer terug legt in een lijn zoals te
+          zien is in de video hiernaast.
+        </p>
+        <div class="date">22 nov 2021</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Additive Manufacturing -->
+  <div class="chapter">
+    <h1>Additive Manufacturing</h1>
+    <p>
+      De lessen van Additive Manufacturing voor het plant water systeem.
+    </p>
+  </div>
+  <div class="button collapsible">
+    Bewijsmateriaal
+    <div class="indicator"></div>
+  </div>
+  <div class="content">
+    <div class="segment">
+      <div class="proof">
+        <img src="../Content/AMLes1.jpg" alt="AM les 1">
+      </div>
+      <div class="explanation">
+        <p>
+          De eerste les was een introductie in additive manufacturing en wat het was. <br>
+          Er zijn meerdere soorten 3d printen, hiervan mogen we er een gebruiken om onze omhuizing mee te maken. Verder
+          werd de impact van additive manufacturing in de maatschappij verklaard. <br>
+          De impact van additive manufacturing is zo groot omdat het een super simplistische manier is om producten te
+          ontwerpen. Er komen niet veel stappen bij kijken. Eerst moet er een ontwerp van een product gemaakt worden een
+          een keuze van materiaal etc. Hierna zou de 3D printen dit allemaal moeten kunnen maken zonder dat er extra
+          machines bij komen kijken. Ook is het mogelijk om veel verschillende vormen te maken die voorheen niet
+          mogelijk of rendabel waren. Deze twee grote voordelen maakt additive manufacturing een flexibele en in theorie
+          goedkope manier van produceren. Verder maakt het een agile werkmethode mogelijk. Voorheen zou een een dure
+          matrijs gemaakt moeten worden waarmee meerdere producten gemaakt konden worden. Als na het eerste product een
+          fout gevonden was zou alles weer opnieuw gemaakt moeten worden. Bij additive manufacturing zou alleen het
+          design aangepast moeten worden tijdens een nieuwe iteratie.
+        </p>
+        <div class="date">18 nov 2021</div>
+      </div>
+    </div>
+    <div class="segment">
+      <div class="proof">
+        <img src="../Content/SolidWorkTest1.png" alt="AM les 2">
+      </div>
+      <div class="explanation">
+        <p>
+          Les 2 van het de 3D course werd gehouden in Nijmegen en ging ging voornamelijk over de verschillende AM
+          methoden. Er zijn zeven methoden met elk eigen voor en nadelen. Ook is kunnen sommige methoden andere
+          materialen printen dan methoden. Verder hebben we in de les nog een groot gedeelte gewerkt met solidworks door
+          een kleine behuizing te maken voor een breadboard met daarom een ESP32. Mijn uitwerking is te zien in de
+          afbeelding hiernaast.
+        </p>
+        <div class="date">29 nov 2021</div>
+      </div>
+    </div>
+    <div class="segment">
+      <div class="explanation">
+        <p>
+          De derde les van 3d printen ging over dus financiele kant van additive manufacturing.
+          Hierbij hebben we geleerd dat het grootste voordeel van AM is dat een groot deel van de productieketen wegvalt
+          omdat veel onderdelen lokaal gemaakt kunnen worden. Hierdoor valt zowel de afhankelijkheid op externe partijen
+          weg maar ook de levertijden in de productieketen. Ondanks dat veel dingen gemaakt kunnen worden dmv AM, de
+          traditionele methode van produceren zal niet komen te vervallen. De methoden zullen samen gaan werken en de
+          elkaars kwaliteiten versterken. Als voorbeeld was gegeven dat een er een mal gemaakt zou kunnen worden met AM.
+          Deze mal zou vervolgens gebruikt kunnen worden om te spuitgieten. Hierbij kan er met de snelheid van
+          spuitgieten geproduceerd worden en de snelheid van AM om nieuwe prototypes te maken voor het verbeteren van
+          het product.<br>
+          Verder heb ik tijdens deze les Mika D geholpen met het installeren van Fusion 360 op haar Macbook aangezien
+          SolidWorks niet werkt op MacOS.
+        </p>
+        <div class="date">3 dec 2021</div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="footer">
+    <h1>Auteur: Evan Franciszok</h1>
+    <h1>Email: <a href="mailto: EW.Franciszok@student.han.nl">EW.Franciszok@student.han.nl</a></h1>
+  </div>
+</body>
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  }
+</script>
+<script>
+
+  var auth_token = 'OZOaWrbsd_V93DRTonRaSjhmlJeC9Ge0';
+  setInterval(function () {
+    get_pin('V1', "Humidity");
+    get_pin('V2', "Temp");
+    get_pin('V4', "Moist");
+  }, 500);
+
+  function get_pin(pin, element) {
+
+    fetch('http://blynk-cloud.com/' + auth_token + '/get/' + pin)
+      .then(response => response.json())
+      .then(data => {
+        window[pin] = data;
+        var gauge = document.getElementById(element).children[0].children[0];
+        gauge.style.width = parseInt(data) + '%';
+        gauge.children[0].innerHTML = parseInt(data) + "" + gauge.children[0].innerHTML[gauge.children[0].innerHTML.length - 1];
+      })
+      .catch(error => console.error(error))
+
+  }
+
+  function openPDF(pdf) {
+    window.open(pdf);
+    return false;
+  }
+
+</script>
+
+</html>

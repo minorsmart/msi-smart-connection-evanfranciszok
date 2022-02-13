@@ -1,1 +1,12 @@
-[![Work in Repl.it](https://classroom.github.com/assets/work-in-replit-14baed9a392b3a25080506f3b7b6d57f295ec2978f6f33ec97e36a161684cbe9.svg)](https://classroom.github.com/online_ide?assignment_repo_id=6564399&assignment_repo_type=AssignmentRepo)
+# Portfolio Evan Franciszok
+
+om de website te zien ga naar: https://minorsmart.github.io/msi-smart-connection-evanfranciszok/
+
+| Auteur         | Evan Franciszok              |
+| -------------- | ---------------------------- |
+| Student nummer | 618508                       |
+| Email          | EW.Franciszok@student.han.nl |
+| Studie         | Minor Smart Industry (HAN)   |
+| Jaar           | 2021-2022                    |
+| Locatie        | Wijchen                      |
+
